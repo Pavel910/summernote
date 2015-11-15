@@ -6757,7 +6757,7 @@
 				// bootstrap tooltip on btn-group bug
 				// https://github.com/twbs/bootstrap/issues/5687
 			}).tooltip({
-				container: 'body',
+				container: false, // Pavel
 				trigger: 'hover',
 				placement: sPlacement || 'top'
 			}).on('click', function () {
