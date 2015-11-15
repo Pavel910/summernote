@@ -5079,7 +5079,7 @@
 			if (options.airMode || options.disableDragAndDrop) {
 				// prevent default drop event
 				$document.on('drop', function (e) {
-					//e.preventDefault();
+					// e.preventDefault(); // Pavel
 				});
 			} else {
 				this.attachDragAndDropEvent(layoutInfo, options);
@@ -6757,7 +6757,7 @@
 				// bootstrap tooltip on btn-group bug
 				// https://github.com/twbs/bootstrap/issues/5687
 			}).tooltip({
-				container: false, // Pavel
+				container: '.tooltip-container', // Pavel - attach tooltip to my own container
 				trigger: 'hover',
 				placement: sPlacement || 'top'
 			}).on('click', function () {
